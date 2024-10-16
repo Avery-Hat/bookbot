@@ -3,7 +3,10 @@ def main():
     book = file_print(file_path)
     num_words = words_total(book)
     counter_char = get_char_dict(book)
-    print(counter_char)
+    
+    #report, part 11
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"{num_words} words found in the document")
 
 def file_print(path):
     with open(path) as f:
